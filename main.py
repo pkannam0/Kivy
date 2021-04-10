@@ -1,12 +1,12 @@
 from kivy.app import App
-from kivy.uix.gridlayout import GridLayout
+from kivy.uix.floatlayout import FloatLayout
 
-class Work(GridLayout):
+class Work(FloatLayout):
         pass
 
-class My_App(App):
+class My_AppApp(App):
     def build(self):
         return Work()
 
 if __name__ == '__main__':
-    My_App().run()
+    My_AppApp().run()
