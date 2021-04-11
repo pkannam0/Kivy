@@ -1,5 +1,5 @@
 Screen:
-    
+
     MDCard:
         size_hint: None, None
         size: 500, 500
@@ -9,3 +9,48 @@ Screen:
         spacing: 25
 
         orientation: 'vertical'
+
+        MDLabel:
+            id: welcome_label
+            text: "WELCOME!"
+            font_size: 40
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            pos_hint: {"center_x":0.5}
+            padding_y: 15
+            color: 'blue'
+
+        MDTextFieldRound:
+            id: email
+            hint_text: "email"
+            color: 'grey'
+            icon_right: "email"
+            size_hint_x: None
+            width: 350
+            font_size: 24
+            pos_hint: {"center_x":0.5}
+
+        MDTextFieldRound:
+            id: password
+            hint_text: "password"
+            color: 'grey'
+            icon_right: "key"
+            size_hint_x: None
+            width: 350
+            font_size: 24
+            pos_hint: {"center_x":0.5}
+            password: True
+
+        MDRoundFlatButton:
+            text: 'LOGIN'
+            font_size: 12
+            pos_hint: {"center_x":0.5}
+            on_press: app.login()
+
+
+        MDRoundFlatButton:
+            text: 'SIGN UP'
+            font_size: 12
+            pos_hint: {"center_x":0.5}
+            on_press: app.sign_up()
