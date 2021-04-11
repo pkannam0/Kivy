@@ -1,12 +1,13 @@
-from kivy.app import App
-from kivy.uix.floatlayout import FloatLayout
+from kivymd.app import MDApp
+from kivy.lang import Builder
 
-class Work(FloatLayout):
-        pass
 
-class My_AppApp(App):
+class My_AppApp(MDApp):
     def build(self):
-        return Work()
+        self.theme_cls.theme_style = "Light"
+        self.theme_cls.primary_palette = "BlueGray"
+        return Builder.load_file("my_app.kv")
+
 
 if __name__ == '__main__':
     My_AppApp().run()
