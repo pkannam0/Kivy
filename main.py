@@ -1,13 +1,6 @@
 from kivymd.app import MDApp
 from kivy.lang import Builder
 
-<<<<<<< HEAD
-=======
-
-class Work(FloatLayout):
-    pass
-
->>>>>>> 79a7f18507cb6e4d9b6d1d7982f5f6488af30563
 
 class My_AppApp(MDApp):
     def build(self):
